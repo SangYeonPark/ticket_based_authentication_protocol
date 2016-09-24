@@ -45,4 +45,4 @@
 
 	array<Byte>^signed_text = RSA->SignData(plain_Text, SHA1);
 	RSA->FromXmlString(publicKeyText);
-	int result = RSA->VerifyData(plain_Text, SHA1, signed_text);
+	bool result = RSA->VerifyData(plain_Text, SHA1, signed_text);
